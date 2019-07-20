@@ -59,6 +59,7 @@
 		24B9FC6D22E0A3EC006E1A12 /* 48.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC2F22E0A3B5006E1A12 /* 48.mp4 */; };
 		24B9FC6E22E0A3EC006E1A12 /* 49.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC1C22E0A3B4006E1A12 /* 49.mp4 */; };
 		24B9FC6F22E0A3EC006E1A12 /* 50.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC3422E0A3B6006E1A12 /* 50.mp4 */; };
+		24FA8B3322E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3222E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 */; };
 		43AFF3C42270F4E700EB82FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AFF3C32270F4E700EB82FC /* AppDelegate.swift */; };
 		43AFF3C62270F4E700EB82FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AFF3C52270F4E700EB82FC /* ViewController.swift */; };
 		43AFF3C92270F4E700EB82FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AFF3C72270F4E700EB82FC /* Main.storyboard */; };
@@ -120,6 +121,7 @@
 		24B9FC3B22E0A3B6006E1A12 /* 33.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 33.mp4; sourceTree = "<group>"; };
 		24B9FC3C22E0A3B6006E1A12 /* 28.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 28.mp4; sourceTree = "<group>"; };
 		24B9FC3D22E0A3B6006E1A12 /* 25.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 25.mp4; sourceTree = "<group>"; };
+		24FA8B3222E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "POW - Gaming Sound Effect (HD).mp3"; sourceTree = "<group>"; };
 		43AFF3C02270F4E700EB82FC /* VedranTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VedranTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AFF3C32270F4E700EB82FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43AFF3C52270F4E700EB82FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				43AFF3CF2270F4E800EB82FC /* Info.plist */,
 				24B9FC0A22E094D7006E1A12 /* pause.png */,
 				24B9FC0822E08FFF006E1A12 /* play.png */,
+				24FA8B3222E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 */,
 			);
 			path = VedranTube;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				24B9FC5822E0A3EC006E1A12 /* 27.mp4 in Resources */,
 				24B9FC5922E0A3EC006E1A12 /* 28.mp4 in Resources */,
 				24B9FC5A22E0A3EC006E1A12 /* 29.mp4 in Resources */,
+				24FA8B3322E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 in Resources */,
 				24B9FC5B22E0A3EC006E1A12 /* 30.mp4 in Resources */,
 				24B9FC5C22E0A3EC006E1A12 /* 31.mp4 in Resources */,
 				24B9FC5D22E0A3EC006E1A12 /* 32.mp4 in Resources */,

@@ -13,6 +13,8 @@ import AVFoundation
 class ViewController: UIViewController {
     var array = NSMutableArray()
     var player = AVPlayer()
+    var soundPlayer: AVAudioPlayer?
+
     var playerLayer = AVPlayerLayer()
     var indexPath = IndexPath()
     
@@ -104,6 +106,8 @@ class ViewController: UIViewController {
     @objc func playerDidFinishPlaying(notification : NotificationCenter) {
         print("video ends")
         
+        self.indexPath = IndexPath(row: self.indexPath.row+1, section: 0)
+    
         let index = self.indexPath.row
         
         if index < array.count {
@@ -190,6 +194,27 @@ class ViewController: UIViewController {
         self.playerView.bringSubviewToFront(self.rightLabel)
     }
     
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "POW - Gaming Sound Effect (HD)", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            soundPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            /* iOS 10 and earlier require the following line:
+             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+            
+            guard let player = soundPlayer else { return }
+            
+            player.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
 
     func generateThumbnail(path: URL) -> UIImage? {
         let avAsset = AVURLAsset(url: path, options: nil)
@@ -243,6 +268,7 @@ extension ViewController : UIScrollViewDelegate {
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        playSound()
     }
 }
 

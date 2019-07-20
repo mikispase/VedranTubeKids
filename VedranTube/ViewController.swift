@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     var array:Array = [String]()
     var player = AVPlayer()
     var soundPlayer: AVAudioPlayer?
-    
     var playerLayer = AVPlayerLayer()
-    var indexPath = IndexPath()
+    var indexPath =  IndexPath(row: 0, section: 0)
+    var masha :Bool = false
     
     @IBOutlet weak var playBackSlider: UISlider!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
@@ -25,24 +25,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionViewHelper: UIView!
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var rightLabel: UILabel!
-    
     @IBOutlet weak var heightCollectionContains: NSLayoutConstraint!
     @IBOutlet var playerView: UIView!
-    
     @IBOutlet weak var backButton: UIButton!
-    var masha :Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         if masha {
-            for  i in 51...101 {
+            for i in 51...101 {
                 array.append(String(i))
             }
         }
         else {
-            for  i in 1...50 {
+            for i in 1...50 {
                 array.append(String(i))
             }
         }
@@ -50,7 +46,6 @@ class ViewController: UIViewController {
         array = array.shuffled()
        
         navigationController?.setNavigationBarHidden(true, animated: true)
-        
         
         guard let name = self.array.first  else { return }
         playVideo(with: name)
@@ -63,15 +58,18 @@ class ViewController: UIViewController {
         playBackSlider.maximumValue = Float(seconds)
         playBackSlider.isContinuous = true
         playBackSlider.tintColor = UIColor.red
-        
-        playerView.isUserInteractionEnabled = true
+        playBackSlider.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.respondTapGesture))
         playerView.addGestureRecognizer(tapGesture)
-        
+        playerView.isUserInteractionEnabled = true
+
         self.periodSliderChange()
         
         NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: nil)
+        
+        flowLayout.minimumLineSpacing = 30
         if UIDevice.current.userInterfaceIdiom == .pad {
             self.heightCollectionContains.constant = 300
             flowLayout.itemSize.width = 364
@@ -82,9 +80,7 @@ class ViewController: UIViewController {
             flowLayout.itemSize.width = 150
             flowLayout.itemSize.height = 141
         }
-        flowLayout.minimumLineSpacing = 30
-        
-        
+
         let img = UIImage(named: "b")
         img?.withRenderingMode(.alwaysTemplate)
         self.backButton.setImage(img, for: .normal)
@@ -100,30 +96,25 @@ class ViewController: UIViewController {
     }
     
     @objc func respondTapGesture(gesture: UIGestureRecognizer) {
-        UIView.animate(withDuration: 1.5,
-                       delay: 0.1,
-                       options: UIView.AnimationOptions.curveEaseIn,
-                       animations: { () -> Void in
-                        
-                        self.playButton.isHidden = !self.playButton.isHidden
-                        self.playBackSlider.isHidden = !self.playBackSlider.isHidden
-                        self.collectionViewHelper.isHidden = !self.collectionViewHelper.isHidden
-                        self.leftLabel.isHidden = !self.leftLabel.isHidden
-                        self.rightLabel.isHidden =  !self.rightLabel.isHidden
-                        self.backButton.isHidden = !self.backButton.isHidden
-                        var x:CGFloat = 0.0
-                        if UIDevice.current.userInterfaceIdiom == .pad {
-                            x =  300
-                        }else {
-                            x = 150
-                        }
-                        
-                        self.heightCollectionContains.constant = !self.playButton.isHidden ? x : 0
-                        
-        }, completion: { (finished) -> Void in
-            // ....
+
+        self.collectionViewHelper.alpha = 0.0
+
+        UIView.animate(withDuration:1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            
+            self.playButton.isHidden = !self.playButton.isHidden
+            self.playBackSlider.isHidden = !self.playBackSlider.isHidden
+            self.collectionViewHelper.isHidden = !self.collectionViewHelper.isHidden
+            self.leftLabel.isHidden = !self.leftLabel.isHidden
+            self.rightLabel.isHidden =  !self.rightLabel.isHidden
+            self.backButton.isHidden = !self.backButton.isHidden
+            var x:CGFloat = 0.0
+            if UIDevice.current.userInterfaceIdiom == .pad { x = 300 } else { x = 150 }
+            self.heightCollectionContains.constant = !self.playButton.isHidden ? x : 0
+            self.collectionViewHelper.alpha = 0.5
+        }, completion: { (completedAnimation) in
+            self.collectionViewHelper.alpha = 1
         })
-        
+
         if !self.player.isPlaying {
             // setTimer()
             self.player.play()
@@ -132,16 +123,12 @@ class ViewController: UIViewController {
     
     
     @objc func playerDidFinishPlaying(notification : NotificationCenter) {
-        print("video ends")
-        
         self.indexPath = IndexPath(row: self.indexPath.row+1, section: 0)
-        
         let index = self.indexPath.row
-        
         if index < array.count {
             let name = array[index]
             self.playVideo(with: name)
-            self.collectionView.scrollToItem(at:IndexPath(item: index, section: 0), at: .right, animated: false)
+            self.collectionView.scrollToItem(at:IndexPath(item: index, section: 0), at: .right, animated: true)
         }
     }
     
@@ -150,18 +137,14 @@ class ViewController: UIViewController {
             if self.player.currentItem?.status == .readyToPlay {
                 let time : Float64 = CMTimeGetSeconds(self.player.currentTime());
                 self.playBackSlider!.value = Float ( time )
-                
-                let currentTime = CMTimeGetSeconds(self.player.currentItem!.duration)
-                let secs = Int(currentTime)
-                
+                let timeEnd = CMTimeGetSeconds(self.player.currentItem!.duration)
+                let secs = Int(timeEnd)
                 DispatchQueue.main.async {
                     if self.player.isPlaying {
                         self.playButton.setImage(UIImage(named: "pause"), for: .normal)
-                    }
-                    else {
+                    }else {
                         self.playButton.setImage(UIImage(named: "play"), for: .normal)
                     }
-                    
                     self.rightLabel.text = NSString(format: "%02d:%02d", secs/60, secs%60) as String//"\(secs/60):\(secs%60)"
                 }
             }
@@ -176,18 +159,14 @@ class ViewController: UIViewController {
     @IBAction func sliderChangeValue(_ sender: UISlider) {
         let seconds : Int64 = Int64(playBackSlider.value)
         let targetTime:CMTime = CMTimeMake(value: seconds, timescale: 1)
-        
         player.seek(to: targetTime)
-        
         if player.rate == 0{
             player.play()
         }
-        
         DispatchQueue.main.async {
             if self.player.isPlaying {
                 self.playButton.setImage(UIImage(named: "pause"), for: .normal)
-            }
-            else{
+            }else{
                 self.playButton.setImage(UIImage(named: "play"), for: .normal)
             }
         }
@@ -197,7 +176,6 @@ class ViewController: UIViewController {
         if player.isPlaying {
             player.pause()
             self.playButton.setImage(UIImage(named: "play"), for: .normal)
-            
         } else {
             player.play()
             self.playButton.setImage(UIImage(named: "pause"), for: .normal)
@@ -205,10 +183,7 @@ class ViewController: UIViewController {
     }
     
     func playVideo(with nameOfVideo:String) {
-        guard let path = Bundle.main.path(forResource: nameOfVideo, ofType:"mp4") else {
-            debugPrint("video.mp4 not found")
-            return
-        }
+        guard let path = Bundle.main.path(forResource: nameOfVideo, ofType:"mp4") else { return }
         player = AVPlayer(url: URL(fileURLWithPath: path))
         playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = playerView.bounds
@@ -271,17 +246,18 @@ extension ViewController: UICollectionViewDataSource {
         let fileUrl = URL(fileURLWithPath: path!)
         let image =  generateThumbnail(path: fileUrl)
         cell?.moviewImageView.image = image
+        let asset = AVAsset(url: fileUrl)
+        let timeEnd = CMTimeGetSeconds(asset.duration)
+        let secs = Int(timeEnd)
+        cell?.lblDuration.text = NSString(format: "%02d:%02d", secs/60, secs%60) as String
         return cell!
     }
 }
 
 extension ViewController : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let name = self.array[indexPath.row] as? String  else {
-            return
-        }
+        guard let name = self.array[indexPath.row] as? String  else { return }
         self.indexPath = indexPath
-        
         player.pause()
         playerLayer.removeFromSuperlayer()
         playVideo(with: name)
@@ -296,8 +272,6 @@ extension ViewController : UIScrollViewDelegate {
         playSound()
     }
 }
-
-
 
 extension AVPlayer {
     var isPlaying: Bool {

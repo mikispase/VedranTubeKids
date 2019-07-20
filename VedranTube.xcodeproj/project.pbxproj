@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		242A212F22E36F6A00BD8A3F /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 242A212E22E36F6A00BD8A3F /* images.png */; };
 		242A213122E3702700BD8A3F /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 242A213022E3702700BD8A3F /* b.png */; };
+		2470AB2922E3CD5F00660535 /* circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2470AB2822E3CD5F00660535 /* circle.jpg */; };
+		2470AB2B22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2470AB2A22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg */; };
 		24B9FC0922E08FFF006E1A12 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC0822E08FFF006E1A12 /* play.png */; };
 		24B9FC0B22E094D7006E1A12 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC0A22E094D7006E1A12 /* pause.png */; };
 		24B9FC3E22E0A3EC006E1A12 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC1B22E0A3B4006E1A12 /* 1.mp4 */; };
@@ -128,6 +130,8 @@
 /* Begin PBXFileReference section */
 		242A212E22E36F6A00BD8A3F /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		242A213022E3702700BD8A3F /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		2470AB2822E3CD5F00660535 /* circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circle.jpg; sourceTree = "<group>"; };
+		2470AB2A22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg"; sourceTree = "<group>"; };
 		24B9FC0822E08FFF006E1A12 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		24B9FC0A22E094D7006E1A12 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		24B9FC0C22E0A3B3006E1A12 /* 23.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 23.mp4; sourceTree = "<group>"; };
@@ -409,6 +413,8 @@
 				24FA8BA322E35F10006BF92C /* back.png */,
 				242A212E22E36F6A00BD8A3F /* images.png */,
 				242A213022E3702700BD8A3F /* b.png */,
+				2470AB2A22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg */,
+				2470AB2822E3CD5F00660535 /* circle.jpg */,
 			);
 			path = VedranTube;
 			sourceTree = "<group>";
@@ -499,6 +505,7 @@
 				24B9FC4C22E0A3EC006E1A12 /* 15.mp4 in Resources */,
 				24FA8B8B22E35A2D006BF92C /* 96.mp4 in Resources */,
 				24B9FC4D22E0A3EC006E1A12 /* 16.mp4 in Resources */,
+				2470AB2922E3CD5F00660535 /* circle.jpg in Resources */,
 				24FA8B8522E35A2D006BF92C /* 77.mp4 in Resources */,
 				24FA8B9322E35A2D006BF92C /* 80.mp4 in Resources */,
 				24B9FC4E22E0A3EC006E1A12 /* 17.mp4 in Resources */,
@@ -516,6 +523,7 @@
 				24B9FC5222E0A3EC006E1A12 /* 21.mp4 in Resources */,
 				24FA8B9C22E35A9A006BF92C /* 59.mp4 in Resources */,
 				24FA8B9122E35A2D006BF92C /* 51.mp4 in Resources */,
+				2470AB2B22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg in Resources */,
 				24FA8B6922E35A2D006BF92C /* 84.mp4 in Resources */,
 				24B9FC5322E0A3EC006E1A12 /* 22.mp4 in Resources */,
 				24B9FC5422E0A3EC006E1A12 /* 23.mp4 in Resources */,

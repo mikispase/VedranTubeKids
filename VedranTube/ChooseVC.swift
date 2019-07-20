@@ -21,12 +21,14 @@ class ChooseVC: UIViewController {
         let vc:ViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
         vc.masha = true
         vc.playSound()
+        vc.soundPlayer?.stop()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func pepa(_ sender: UITapGestureRecognizer) {
         let vc:ViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
         vc.playSound()
+        vc.soundPlayer?.stop()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

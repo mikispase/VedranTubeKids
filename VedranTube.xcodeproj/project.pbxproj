@@ -141,34 +141,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43AFF3B72270F4E700EB82FC = {
+		24FA8B3122E34DBB006BF92C /* PepaVideo */ = {
 			isa = PBXGroup;
 			children = (
-				43AFF3C22270F4E700EB82FC /* VedranTube */,
-				43AFF3C12270F4E700EB82FC /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		43AFF3C12270F4E700EB82FC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				43AFF3C02270F4E700EB82FC /* VedranTube.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		43AFF3C22270F4E700EB82FC /* VedranTube */ = {
-			isa = PBXGroup;
-			children = (
-				43AFF3C32270F4E700EB82FC /* AppDelegate.swift */,
-				43AFF3C52270F4E700EB82FC /* ViewController.swift */,
-				43AFF45B2271017B00EB82FC /* MyCollectionViewCell.swift */,
-				43AFF3C72270F4E700EB82FC /* Main.storyboard */,
-				43AFF3CA2270F4E800EB82FC /* Assets.xcassets */,
-				43AFF3CC2270F4E800EB82FC /* LaunchScreen.storyboard */,
-				43AFF3CF2270F4E800EB82FC /* Info.plist */,
-				24B9FC0A22E094D7006E1A12 /* pause.png */,
-				24B9FC0822E08FFF006E1A12 /* play.png */,
 				24B9FC1B22E0A3B4006E1A12 /* 1.mp4 */,
 				24B9FC0E22E0A3B3006E1A12 /* 2.mp4 */,
 				24B9FC1822E0A3B4006E1A12 /* 3.mp4 */,
@@ -219,6 +194,39 @@
 				24B9FC2F22E0A3B5006E1A12 /* 48.mp4 */,
 				24B9FC1C22E0A3B4006E1A12 /* 49.mp4 */,
 				24B9FC3422E0A3B6006E1A12 /* 50.mp4 */,
+			);
+			path = PepaVideo;
+			sourceTree = "<group>";
+		};
+		43AFF3B72270F4E700EB82FC = {
+			isa = PBXGroup;
+			children = (
+				43AFF3C22270F4E700EB82FC /* VedranTube */,
+				43AFF3C12270F4E700EB82FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43AFF3C12270F4E700EB82FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43AFF3C02270F4E700EB82FC /* VedranTube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43AFF3C22270F4E700EB82FC /* VedranTube */ = {
+			isa = PBXGroup;
+			children = (
+				24FA8B3122E34DBB006BF92C /* PepaVideo */,
+				43AFF3C32270F4E700EB82FC /* AppDelegate.swift */,
+				43AFF3C52270F4E700EB82FC /* ViewController.swift */,
+				43AFF45B2271017B00EB82FC /* MyCollectionViewCell.swift */,
+				43AFF3C72270F4E700EB82FC /* Main.storyboard */,
+				43AFF3CA2270F4E800EB82FC /* Assets.xcassets */,
+				43AFF3CC2270F4E800EB82FC /* LaunchScreen.storyboard */,
+				43AFF3CF2270F4E800EB82FC /* Info.plist */,
+				24B9FC0A22E094D7006E1A12 /* pause.png */,
+				24B9FC0822E08FFF006E1A12 /* play.png */,
 			);
 			path = VedranTube;
 			sourceTree = "<group>";

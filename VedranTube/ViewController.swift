@@ -11,10 +11,10 @@ import AVKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    var array = NSMutableArray()
+    var array:Array = [String]()
     var player = AVPlayer()
     var soundPlayer: AVAudioPlayer?
-
+    
     var playerLayer = AVPlayerLayer()
     var indexPath = IndexPath()
     
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionViewHelper: UIView!
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var rightLabel: UILabel!
- 
+    
     @IBOutlet weak var heightCollectionContains: NSLayoutConstraint!
     @IBOutlet var playerView: UIView!
     
@@ -38,19 +38,21 @@ class ViewController: UIViewController {
         
         if masha {
             for  i in 51...101 {
-                array.add(String(i))
+                array.append(String(i))
             }
         }
         else {
             for  i in 1...50 {
-                array.add(String(i))
+                array.append(String(i))
             }
         }
         
+        array = array.shuffled()
+       
         navigationController?.setNavigationBarHidden(true, animated: true)
-
         
-        guard let name = self.array[0] as? String  else { return }
+        
+        guard let name = self.array.first  else { return }
         playVideo(with: name)
         player.seek(to: CMTime(seconds: 50, preferredTimescale: 1))
         player.pause()
@@ -90,10 +92,10 @@ class ViewController: UIViewController {
         self.backButton.tintColor = .white
     }
     
-  
+    
     
     @IBAction func back(_ sender: UIButton) {
-        self.player.pause()
+        player.replaceCurrentItem(with: nil)
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -133,12 +135,12 @@ class ViewController: UIViewController {
         print("video ends")
         
         self.indexPath = IndexPath(row: self.indexPath.row+1, section: 0)
-    
+        
         let index = self.indexPath.row
         
         if index < array.count {
             let name = array[index]
-            self.playVideo(with: name as! String)
+            self.playVideo(with: name)
             self.collectionView.scrollToItem(at:IndexPath(item: index, section: 0), at: .right, animated: false)
         }
     }
@@ -227,9 +229,9 @@ class ViewController: UIViewController {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
-            
+            soundPlayer = nil
             soundPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-        
+            
             guard let player = soundPlayer else { return }
             
             player.play()
@@ -238,7 +240,7 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-
+    
     func generateThumbnail(path: URL) -> UIImage? {
         let avAsset = AVURLAsset(url: path, options: nil)
         let imageGenerator = AVAssetImageGenerator(asset: avAsset)
@@ -264,7 +266,7 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MyCollectionViewCell
-        let name = self.array[indexPath.row] as? String
+        let name = self.array[indexPath.row]
         let path = Bundle.main.path(forResource: name, ofType:"mp4")
         let fileUrl = URL(fileURLWithPath: path!)
         let image =  generateThumbnail(path: fileUrl)

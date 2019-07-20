@@ -11,8 +11,8 @@
 		242A213122E3702700BD8A3F /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 242A213022E3702700BD8A3F /* b.png */; };
 		2470AB2922E3CD5F00660535 /* circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2470AB2822E3CD5F00660535 /* circle.jpg */; };
 		2470AB2B22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2470AB2A22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg */; };
-		24B9FC0922E08FFF006E1A12 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC0822E08FFF006E1A12 /* play.png */; };
-		24B9FC0B22E094D7006E1A12 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC0A22E094D7006E1A12 /* pause.png */; };
+		2470AB3722E3DA4300660535 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 2470AB3622E3DA4300660535 /* play.png */; };
+		2470AB3922E3DA5800660535 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 2470AB3822E3DA5800660535 /* pause.png */; };
 		24B9FC3E22E0A3EC006E1A12 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC1B22E0A3B4006E1A12 /* 1.mp4 */; };
 		24B9FC3F22E0A3EC006E1A12 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC0E22E0A3B3006E1A12 /* 2.mp4 */; };
 		24B9FC4022E0A3EC006E1A12 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC1822E0A3B4006E1A12 /* 3.mp4 */; };
@@ -132,8 +132,8 @@
 		242A213022E3702700BD8A3F /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
 		2470AB2822E3CD5F00660535 /* circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circle.jpg; sourceTree = "<group>"; };
 		2470AB2A22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg"; sourceTree = "<group>"; };
-		24B9FC0822E08FFF006E1A12 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		24B9FC0A22E094D7006E1A12 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		2470AB3622E3DA4300660535 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		2470AB3822E3DA5800660535 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		24B9FC0C22E0A3B3006E1A12 /* 23.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 23.mp4; sourceTree = "<group>"; };
 		24B9FC0D22E0A3B3006E1A12 /* 43.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 43.mp4; sourceTree = "<group>"; };
 		24B9FC0E22E0A3B3006E1A12 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
@@ -405,8 +405,6 @@
 				43AFF3CA2270F4E800EB82FC /* Assets.xcassets */,
 				43AFF3CC2270F4E800EB82FC /* LaunchScreen.storyboard */,
 				43AFF3CF2270F4E800EB82FC /* Info.plist */,
-				24B9FC0A22E094D7006E1A12 /* pause.png */,
-				24B9FC0822E08FFF006E1A12 /* play.png */,
 				24FA8B3222E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 */,
 				24FA8B9F22E35BAE006BF92C /* pepa.jpg */,
 				24FA8B9D22E35BA7006BF92C /* bear.jpg */,
@@ -414,7 +412,9 @@
 				242A212E22E36F6A00BD8A3F /* images.png */,
 				242A213022E3702700BD8A3F /* b.png */,
 				2470AB2A22E3CDF500660535 /* pain-red-circle-icon-for-inflammatory-ache-point-vector-symbol-for-muscular-pain-or-headache-and-painkiller-medicine-pill-package-design-RRB9BB.jpg */,
+				2470AB3622E3DA4300660535 /* play.png */,
 				2470AB2822E3CD5F00660535 /* circle.jpg */,
+				2470AB3822E3DA5800660535 /* pause.png */,
 			);
 			path = VedranTube;
 			sourceTree = "<group>";
@@ -495,6 +495,7 @@
 				24B9FC4522E0A3EC006E1A12 /* 8.mp4 in Resources */,
 				24B9FC4622E0A3EC006E1A12 /* 9.mp4 in Resources */,
 				24B9FC4722E0A3EC006E1A12 /* 10.mp4 in Resources */,
+				2470AB3722E3DA4300660535 /* play.png in Resources */,
 				24B9FC4822E0A3EC006E1A12 /* 11.mp4 in Resources */,
 				24FA8B9622E35A2D006BF92C /* 62.mp4 in Resources */,
 				24B9FC4922E0A3EC006E1A12 /* 12.mp4 in Resources */,
@@ -550,6 +551,7 @@
 				24FA8B8222E35A2D006BF92C /* 93.mp4 in Resources */,
 				24B9FC6122E0A3EC006E1A12 /* 36.mp4 in Resources */,
 				24FA8B8122E35A2D006BF92C /* 86.mp4 in Resources */,
+				2470AB3922E3DA5800660535 /* pause.png in Resources */,
 				24FA8B7322E35A2D006BF92C /* 58.mp4 in Resources */,
 				24B9FC6222E0A3EC006E1A12 /* 37.mp4 in Resources */,
 				24FA8B6E22E35A2D006BF92C /* 97.mp4 in Resources */,
@@ -580,8 +582,6 @@
 				24FA8B9222E35A2D006BF92C /* 78.mp4 in Resources */,
 				24FA8B9722E35A2D006BF92C /* 68.mp4 in Resources */,
 				24FA8B9022E35A2D006BF92C /* 88.mp4 in Resources */,
-				24B9FC0922E08FFF006E1A12 /* play.png in Resources */,
-				24B9FC0B22E094D7006E1A12 /* pause.png in Resources */,
 				24FA8B8722E35A2D006BF92C /* 92.mp4 in Resources */,
 				43AFF3CE2270F4E800EB82FC /* LaunchScreen.storyboard in Resources */,
 				24FA8B7F22E35A2D006BF92C /* 60.mp4 in Resources */,

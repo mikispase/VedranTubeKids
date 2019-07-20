@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         
         guard let name = self.array.first  else { return }
         playVideo(with: name)
-        player.seek(to: CMTime(seconds: 50, preferredTimescale: 1))
+        player.seek(to: CMTime(seconds: 0.1, preferredTimescale: 1))
         player.pause()
         
         let duration : CMTime = (player.currentItem?.asset.duration)!
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         playBackSlider.maximumValue = Float(seconds)
         playBackSlider.isContinuous = true
         playBackSlider.tintColor = UIColor.red
-        playBackSlider.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        playBackSlider.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
 
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.respondTapGesture))
@@ -88,7 +88,14 @@ class ViewController: UIViewController {
         self.backButton.tintColor = .white
     }
     
-    
+    // Fix this deinit not called
+    deinit {
+        print("deinit")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        NotificationCenter.default.removeObserver(self)
+    }
     
     @IBAction func back(_ sender: UIButton) {
         player.replaceCurrentItem(with: nil)
@@ -137,15 +144,20 @@ class ViewController: UIViewController {
             if self.player.currentItem?.status == .readyToPlay {
                 let time : Float64 = CMTimeGetSeconds(self.player.currentTime());
                 self.playBackSlider!.value = Float ( time )
+                let timeCurrent = CMTimeGetSeconds(self.player.currentTime())
+                let secsCurrent = Int(timeCurrent)
+
                 let timeEnd = CMTimeGetSeconds(self.player.currentItem!.duration)
-                let secs = Int(timeEnd)
+                let secsEnd = Int(timeEnd)
+                
                 DispatchQueue.main.async {
                     if self.player.isPlaying {
                         self.playButton.setImage(UIImage(named: "pause"), for: .normal)
                     }else {
                         self.playButton.setImage(UIImage(named: "play"), for: .normal)
                     }
-                    self.rightLabel.text = NSString(format: "%02d:%02d", secs/60, secs%60) as String//"\(secs/60):\(secs%60)"
+                    self.leftLabel.text = NSString(format: "%02d:%02d", secsCurrent/60, secsCurrent%60) as String//"\(secs/60):\(secs%60)"
+                    self.rightLabel.text = NSString(format: "%02d:%02d", secsEnd/60, secsEnd%60) as String//"\(secs/60):\(secs%60)"
                 }
             }
         }
@@ -183,6 +195,7 @@ class ViewController: UIViewController {
     }
     
     func playVideo(with nameOfVideo:String) {
+        player.replaceCurrentItem(with: nil)
         guard let path = Bundle.main.path(forResource: nameOfVideo, ofType:"mp4") else { return }
         player = AVPlayer(url: URL(fileURLWithPath: path))
         playerLayer = AVPlayerLayer(player: player)

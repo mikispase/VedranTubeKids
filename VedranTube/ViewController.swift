@@ -25,17 +25,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionViewHelper: UIView!
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var rightLabel: UILabel!
+ 
     @IBOutlet weak var heightCollectionContains: NSLayoutConstraint!
     @IBOutlet var playerView: UIView!
     
+    @IBOutlet weak var backButton: UIButton!
+    var masha :Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        for  i in 1...50 {
-            array.add(String(i))
+        if masha {
+            for  i in 51...101 {
+                array.add(String(i))
+            }
         }
+        else {
+            for  i in 1...50 {
+                array.add(String(i))
+            }
+        }
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+
         
         guard let name = self.array[0] as? String  else { return }
         playVideo(with: name)
@@ -48,7 +61,6 @@ class ViewController: UIViewController {
         playBackSlider.maximumValue = Float(seconds)
         playBackSlider.isContinuous = true
         playBackSlider.tintColor = UIColor.red
-        
         
         playerView.isUserInteractionEnabled = true
         
@@ -70,6 +82,19 @@ class ViewController: UIViewController {
         }
         flowLayout.minimumLineSpacing = 30
         
+        
+        let img = UIImage(named: "b")
+        img?.withRenderingMode(.alwaysTemplate)
+        self.backButton.setImage(img, for: .normal)
+        self.backButton.imageView?.tintColor = .white
+        self.backButton.tintColor = .white
+    }
+    
+  
+    
+    @IBAction func back(_ sender: UIButton) {
+        self.player.pause()
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func respondTapGesture(gesture: UIGestureRecognizer) {
@@ -83,6 +108,7 @@ class ViewController: UIViewController {
                         self.collectionViewHelper.isHidden = !self.collectionViewHelper.isHidden
                         self.leftLabel.isHidden = !self.leftLabel.isHidden
                         self.rightLabel.isHidden =  !self.rightLabel.isHidden
+                        self.backButton.isHidden = !self.backButton.isHidden
                         var x:CGFloat = 0.0
                         if UIDevice.current.userInterfaceIdiom == .pad {
                             x =  300
@@ -192,6 +218,7 @@ class ViewController: UIViewController {
         self.playerView.bringSubviewToFront(self.playBackSlider)
         self.playerView.bringSubviewToFront(self.leftLabel)
         self.playerView.bringSubviewToFront(self.rightLabel)
+        self.playerView.bringSubviewToFront(self.backButton)
     }
     
     func playSound() {
@@ -201,12 +228,8 @@ class ViewController: UIViewController {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
             
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
             soundPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            
-            /* iOS 10 and earlier require the following line:
-             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
-            
+        
             guard let player = soundPlayer else { return }
             
             player.play()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242A212F22E36F6A00BD8A3F /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 242A212E22E36F6A00BD8A3F /* images.png */; };
+		242A213122E3702700BD8A3F /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 242A213022E3702700BD8A3F /* b.png */; };
 		24B9FC0922E08FFF006E1A12 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC0822E08FFF006E1A12 /* play.png */; };
 		24B9FC0B22E094D7006E1A12 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC0A22E094D7006E1A12 /* pause.png */; };
 		24B9FC3E22E0A3EC006E1A12 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC1B22E0A3B4006E1A12 /* 1.mp4 */; };
@@ -60,6 +62,61 @@
 		24B9FC6E22E0A3EC006E1A12 /* 49.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC1C22E0A3B4006E1A12 /* 49.mp4 */; };
 		24B9FC6F22E0A3EC006E1A12 /* 50.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24B9FC3422E0A3B6006E1A12 /* 50.mp4 */; };
 		24FA8B3322E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3222E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 */; };
+		24FA8B6822E35A2D006BF92C /* 95.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3522E359EF006BF92C /* 95.mp4 */; };
+		24FA8B6922E35A2D006BF92C /* 84.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3622E359F0006BF92C /* 84.mp4 */; };
+		24FA8B6A22E35A2D006BF92C /* 94.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3722E359F2006BF92C /* 94.mp4 */; };
+		24FA8B6B22E35A2D006BF92C /* 85.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3822E359F3006BF92C /* 85.mp4 */; };
+		24FA8B6C22E35A2D006BF92C /* 56.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3922E359F4006BF92C /* 56.mp4 */; };
+		24FA8B6D22E35A2D006BF92C /* 73.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3A22E359F6006BF92C /* 73.mp4 */; };
+		24FA8B6E22E35A2D006BF92C /* 97.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3B22E359F7006BF92C /* 97.mp4 */; };
+		24FA8B6F22E35A2D006BF92C /* 98.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3C22E359F8006BF92C /* 98.mp4 */; };
+		24FA8B7022E35A2D006BF92C /* 65.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3D22E359F9006BF92C /* 65.mp4 */; };
+		24FA8B7122E35A2D006BF92C /* 61.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3E22E359FB006BF92C /* 61.mp4 */; };
+		24FA8B7222E35A2D006BF92C /* 71.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B3F22E359FC006BF92C /* 71.mp4 */; };
+		24FA8B7322E35A2D006BF92C /* 58.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4022E359FE006BF92C /* 58.mp4 */; };
+		24FA8B7422E35A2D006BF92C /* 83.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4122E359FF006BF92C /* 83.mp4 */; };
+		24FA8B7522E35A2D006BF92C /* 90.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4222E35A00006BF92C /* 90.mp4 */; };
+		24FA8B7622E35A2D006BF92C /* 74.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4322E35A01006BF92C /* 74.mp4 */; };
+		24FA8B7722E35A2D006BF92C /* 82.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4422E35A02006BF92C /* 82.mp4 */; };
+		24FA8B7822E35A2D006BF92C /* 87.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4522E35A04006BF92C /* 87.mp4 */; };
+		24FA8B7922E35A2D006BF92C /* 63.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4622E35A05006BF92C /* 63.mp4 */; };
+		24FA8B7A22E35A2D006BF92C /* 72.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4722E35A07006BF92C /* 72.mp4 */; };
+		24FA8B7B22E35A2D006BF92C /* 69.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4822E35A08006BF92C /* 69.mp4 */; };
+		24FA8B7C22E35A2D006BF92C /* 66.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4922E35A0A006BF92C /* 66.mp4 */; };
+		24FA8B7D22E35A2D006BF92C /* 89.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4A22E35A0B006BF92C /* 89.mp4 */; };
+		24FA8B7E22E35A2D006BF92C /* 55.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4B22E35A0C006BF92C /* 55.mp4 */; };
+		24FA8B7F22E35A2D006BF92C /* 60.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4C22E35A0D006BF92C /* 60.mp4 */; };
+		24FA8B8022E35A2D006BF92C /* 91.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4D22E35A0E006BF92C /* 91.mp4 */; };
+		24FA8B8122E35A2D006BF92C /* 86.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4E22E35A0F006BF92C /* 86.mp4 */; };
+		24FA8B8222E35A2D006BF92C /* 93.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B4F22E35A10006BF92C /* 93.mp4 */; };
+		24FA8B8322E35A2D006BF92C /* 54.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5022E35A12006BF92C /* 54.mp4 */; };
+		24FA8B8422E35A2D006BF92C /* 81.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5122E35A13006BF92C /* 81.mp4 */; };
+		24FA8B8522E35A2D006BF92C /* 77.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5222E35A14006BF92C /* 77.mp4 */; };
+		24FA8B8622E35A2D006BF92C /* 52.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5322E35A15006BF92C /* 52.mp4 */; };
+		24FA8B8722E35A2D006BF92C /* 92.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5422E35A16006BF92C /* 92.mp4 */; };
+		24FA8B8822E35A2D006BF92C /* 75.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5522E35A17006BF92C /* 75.mp4 */; };
+		24FA8B8922E35A2D006BF92C /* 79.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5622E35A19006BF92C /* 79.mp4 */; };
+		24FA8B8A22E35A2D006BF92C /* 53.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5722E35A1B006BF92C /* 53.mp4 */; };
+		24FA8B8B22E35A2D006BF92C /* 96.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5822E35A1C006BF92C /* 96.mp4 */; };
+		24FA8B8C22E35A2D006BF92C /* 76.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5922E35A1D006BF92C /* 76.mp4 */; };
+		24FA8B8D22E35A2D006BF92C /* 64.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5A22E35A1F006BF92C /* 64.mp4 */; };
+		24FA8B8E22E35A2D006BF92C /* 99.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5B22E35A20006BF92C /* 99.mp4 */; };
+		24FA8B8F22E35A2D006BF92C /* 70.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5C22E35A21006BF92C /* 70.mp4 */; };
+		24FA8B9022E35A2D006BF92C /* 88.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5D22E35A22006BF92C /* 88.mp4 */; };
+		24FA8B9122E35A2D006BF92C /* 51.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5E22E35A24006BF92C /* 51.mp4 */; };
+		24FA8B9222E35A2D006BF92C /* 78.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B5F22E35A25006BF92C /* 78.mp4 */; };
+		24FA8B9322E35A2D006BF92C /* 80.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B6022E35A26006BF92C /* 80.mp4 */; };
+		24FA8B9422E35A2D006BF92C /* 100.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B6122E35A27006BF92C /* 100.mp4 */; };
+		24FA8B9522E35A2D006BF92C /* 101.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B6222E35A28006BF92C /* 101.mp4 */; };
+		24FA8B9622E35A2D006BF92C /* 62.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B6322E35A29006BF92C /* 62.mp4 */; };
+		24FA8B9722E35A2D006BF92C /* 68.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B6422E35A2A006BF92C /* 68.mp4 */; };
+		24FA8B9822E35A2D006BF92C /* 57.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B6522E35A2C006BF92C /* 57.mp4 */; };
+		24FA8B9922E35A2D006BF92C /* 67.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B6622E35A2D006BF92C /* 67.mp4 */; };
+		24FA8B9C22E35A9A006BF92C /* 59.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B9B22E35A9A006BF92C /* 59.mp4 */; };
+		24FA8B9E22E35BA8006BF92C /* bear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B9D22E35BA7006BF92C /* bear.jpg */; };
+		24FA8BA022E35BAE006BF92C /* pepa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8B9F22E35BAE006BF92C /* pepa.jpg */; };
+		24FA8BA222E35C82006BF92C /* ChooseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FA8BA122E35C82006BF92C /* ChooseVC.swift */; };
+		24FA8BA422E35F10006BF92C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 24FA8BA322E35F10006BF92C /* back.png */; };
 		43AFF3C42270F4E700EB82FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AFF3C32270F4E700EB82FC /* AppDelegate.swift */; };
 		43AFF3C62270F4E700EB82FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AFF3C52270F4E700EB82FC /* ViewController.swift */; };
 		43AFF3C92270F4E700EB82FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AFF3C72270F4E700EB82FC /* Main.storyboard */; };
@@ -69,6 +126,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		242A212E22E36F6A00BD8A3F /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		242A213022E3702700BD8A3F /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
 		24B9FC0822E08FFF006E1A12 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		24B9FC0A22E094D7006E1A12 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		24B9FC0C22E0A3B3006E1A12 /* 23.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 23.mp4; sourceTree = "<group>"; };
@@ -122,6 +181,61 @@
 		24B9FC3C22E0A3B6006E1A12 /* 28.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 28.mp4; sourceTree = "<group>"; };
 		24B9FC3D22E0A3B6006E1A12 /* 25.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 25.mp4; sourceTree = "<group>"; };
 		24FA8B3222E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "POW - Gaming Sound Effect (HD).mp3"; sourceTree = "<group>"; };
+		24FA8B3522E359EF006BF92C /* 95.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 95.mp4; sourceTree = "<group>"; };
+		24FA8B3622E359F0006BF92C /* 84.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 84.mp4; sourceTree = "<group>"; };
+		24FA8B3722E359F2006BF92C /* 94.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 94.mp4; sourceTree = "<group>"; };
+		24FA8B3822E359F3006BF92C /* 85.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 85.mp4; sourceTree = "<group>"; };
+		24FA8B3922E359F4006BF92C /* 56.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 56.mp4; sourceTree = "<group>"; };
+		24FA8B3A22E359F6006BF92C /* 73.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 73.mp4; sourceTree = "<group>"; };
+		24FA8B3B22E359F7006BF92C /* 97.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 97.mp4; sourceTree = "<group>"; };
+		24FA8B3C22E359F8006BF92C /* 98.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 98.mp4; sourceTree = "<group>"; };
+		24FA8B3D22E359F9006BF92C /* 65.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 65.mp4; sourceTree = "<group>"; };
+		24FA8B3E22E359FB006BF92C /* 61.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61.mp4; sourceTree = "<group>"; };
+		24FA8B3F22E359FC006BF92C /* 71.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 71.mp4; sourceTree = "<group>"; };
+		24FA8B4022E359FE006BF92C /* 58.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 58.mp4; sourceTree = "<group>"; };
+		24FA8B4122E359FF006BF92C /* 83.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 83.mp4; sourceTree = "<group>"; };
+		24FA8B4222E35A00006BF92C /* 90.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 90.mp4; sourceTree = "<group>"; };
+		24FA8B4322E35A01006BF92C /* 74.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 74.mp4; sourceTree = "<group>"; };
+		24FA8B4422E35A02006BF92C /* 82.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 82.mp4; sourceTree = "<group>"; };
+		24FA8B4522E35A04006BF92C /* 87.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 87.mp4; sourceTree = "<group>"; };
+		24FA8B4622E35A05006BF92C /* 63.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 63.mp4; sourceTree = "<group>"; };
+		24FA8B4722E35A07006BF92C /* 72.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 72.mp4; sourceTree = "<group>"; };
+		24FA8B4822E35A08006BF92C /* 69.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 69.mp4; sourceTree = "<group>"; };
+		24FA8B4922E35A0A006BF92C /* 66.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 66.mp4; sourceTree = "<group>"; };
+		24FA8B4A22E35A0B006BF92C /* 89.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 89.mp4; sourceTree = "<group>"; };
+		24FA8B4B22E35A0C006BF92C /* 55.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 55.mp4; sourceTree = "<group>"; };
+		24FA8B4C22E35A0D006BF92C /* 60.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 60.mp4; sourceTree = "<group>"; };
+		24FA8B4D22E35A0E006BF92C /* 91.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 91.mp4; sourceTree = "<group>"; };
+		24FA8B4E22E35A0F006BF92C /* 86.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 86.mp4; sourceTree = "<group>"; };
+		24FA8B4F22E35A10006BF92C /* 93.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 93.mp4; sourceTree = "<group>"; };
+		24FA8B5022E35A12006BF92C /* 54.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 54.mp4; sourceTree = "<group>"; };
+		24FA8B5122E35A13006BF92C /* 81.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 81.mp4; sourceTree = "<group>"; };
+		24FA8B5222E35A14006BF92C /* 77.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 77.mp4; sourceTree = "<group>"; };
+		24FA8B5322E35A15006BF92C /* 52.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 52.mp4; sourceTree = "<group>"; };
+		24FA8B5422E35A16006BF92C /* 92.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 92.mp4; sourceTree = "<group>"; };
+		24FA8B5522E35A17006BF92C /* 75.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 75.mp4; sourceTree = "<group>"; };
+		24FA8B5622E35A19006BF92C /* 79.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 79.mp4; sourceTree = "<group>"; };
+		24FA8B5722E35A1B006BF92C /* 53.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 53.mp4; sourceTree = "<group>"; };
+		24FA8B5822E35A1C006BF92C /* 96.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 96.mp4; sourceTree = "<group>"; };
+		24FA8B5922E35A1D006BF92C /* 76.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 76.mp4; sourceTree = "<group>"; };
+		24FA8B5A22E35A1F006BF92C /* 64.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 64.mp4; sourceTree = "<group>"; };
+		24FA8B5B22E35A20006BF92C /* 99.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 99.mp4; sourceTree = "<group>"; };
+		24FA8B5C22E35A21006BF92C /* 70.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 70.mp4; sourceTree = "<group>"; };
+		24FA8B5D22E35A22006BF92C /* 88.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 88.mp4; sourceTree = "<group>"; };
+		24FA8B5E22E35A24006BF92C /* 51.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 51.mp4; sourceTree = "<group>"; };
+		24FA8B5F22E35A25006BF92C /* 78.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 78.mp4; sourceTree = "<group>"; };
+		24FA8B6022E35A26006BF92C /* 80.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 80.mp4; sourceTree = "<group>"; };
+		24FA8B6122E35A27006BF92C /* 100.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 100.mp4; sourceTree = "<group>"; };
+		24FA8B6222E35A28006BF92C /* 101.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 101.mp4; sourceTree = "<group>"; };
+		24FA8B6322E35A29006BF92C /* 62.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 62.mp4; sourceTree = "<group>"; };
+		24FA8B6422E35A2A006BF92C /* 68.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 68.mp4; sourceTree = "<group>"; };
+		24FA8B6522E35A2C006BF92C /* 57.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 57.mp4; sourceTree = "<group>"; };
+		24FA8B6622E35A2D006BF92C /* 67.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 67.mp4; sourceTree = "<group>"; };
+		24FA8B9B22E35A9A006BF92C /* 59.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 59.mp4; sourceTree = "<group>"; };
+		24FA8B9D22E35BA7006BF92C /* bear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bear.jpg; sourceTree = "<group>"; };
+		24FA8B9F22E35BAE006BF92C /* pepa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pepa.jpg; sourceTree = "<group>"; };
+		24FA8BA122E35C82006BF92C /* ChooseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseVC.swift; sourceTree = "<group>"; };
+		24FA8BA322E35F10006BF92C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		43AFF3C02270F4E700EB82FC /* VedranTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VedranTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AFF3C32270F4E700EB82FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43AFF3C52270F4E700EB82FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +314,64 @@
 			path = PepaVideo;
 			sourceTree = "<group>";
 		};
+		24FA8B3422E359C8006BF92C /* MashaVideo */ = {
+			isa = PBXGroup;
+			children = (
+				24FA8B5E22E35A24006BF92C /* 51.mp4 */,
+				24FA8B5322E35A15006BF92C /* 52.mp4 */,
+				24FA8B5722E35A1B006BF92C /* 53.mp4 */,
+				24FA8B5022E35A12006BF92C /* 54.mp4 */,
+				24FA8B4B22E35A0C006BF92C /* 55.mp4 */,
+				24FA8B3922E359F4006BF92C /* 56.mp4 */,
+				24FA8B6522E35A2C006BF92C /* 57.mp4 */,
+				24FA8B4022E359FE006BF92C /* 58.mp4 */,
+				24FA8B4C22E35A0D006BF92C /* 60.mp4 */,
+				24FA8B3E22E359FB006BF92C /* 61.mp4 */,
+				24FA8B6322E35A29006BF92C /* 62.mp4 */,
+				24FA8B4622E35A05006BF92C /* 63.mp4 */,
+				24FA8B5A22E35A1F006BF92C /* 64.mp4 */,
+				24FA8B3D22E359F9006BF92C /* 65.mp4 */,
+				24FA8B9B22E35A9A006BF92C /* 59.mp4 */,
+				24FA8B4922E35A0A006BF92C /* 66.mp4 */,
+				24FA8B6622E35A2D006BF92C /* 67.mp4 */,
+				24FA8B6422E35A2A006BF92C /* 68.mp4 */,
+				24FA8B4822E35A08006BF92C /* 69.mp4 */,
+				24FA8B5C22E35A21006BF92C /* 70.mp4 */,
+				24FA8B3F22E359FC006BF92C /* 71.mp4 */,
+				24FA8B4722E35A07006BF92C /* 72.mp4 */,
+				24FA8B3A22E359F6006BF92C /* 73.mp4 */,
+				24FA8B4322E35A01006BF92C /* 74.mp4 */,
+				24FA8B5522E35A17006BF92C /* 75.mp4 */,
+				24FA8B5922E35A1D006BF92C /* 76.mp4 */,
+				24FA8B5222E35A14006BF92C /* 77.mp4 */,
+				24FA8B5F22E35A25006BF92C /* 78.mp4 */,
+				24FA8B5622E35A19006BF92C /* 79.mp4 */,
+				24FA8B6022E35A26006BF92C /* 80.mp4 */,
+				24FA8B5122E35A13006BF92C /* 81.mp4 */,
+				24FA8B4422E35A02006BF92C /* 82.mp4 */,
+				24FA8B4122E359FF006BF92C /* 83.mp4 */,
+				24FA8B3622E359F0006BF92C /* 84.mp4 */,
+				24FA8B3822E359F3006BF92C /* 85.mp4 */,
+				24FA8B4E22E35A0F006BF92C /* 86.mp4 */,
+				24FA8B4522E35A04006BF92C /* 87.mp4 */,
+				24FA8B5D22E35A22006BF92C /* 88.mp4 */,
+				24FA8B4A22E35A0B006BF92C /* 89.mp4 */,
+				24FA8B4222E35A00006BF92C /* 90.mp4 */,
+				24FA8B4D22E35A0E006BF92C /* 91.mp4 */,
+				24FA8B5422E35A16006BF92C /* 92.mp4 */,
+				24FA8B4F22E35A10006BF92C /* 93.mp4 */,
+				24FA8B3722E359F2006BF92C /* 94.mp4 */,
+				24FA8B3522E359EF006BF92C /* 95.mp4 */,
+				24FA8B5822E35A1C006BF92C /* 96.mp4 */,
+				24FA8B3B22E359F7006BF92C /* 97.mp4 */,
+				24FA8B3C22E359F8006BF92C /* 98.mp4 */,
+				24FA8B5B22E35A20006BF92C /* 99.mp4 */,
+				24FA8B6122E35A27006BF92C /* 100.mp4 */,
+				24FA8B6222E35A28006BF92C /* 101.mp4 */,
+			);
+			path = MashaVideo;
+			sourceTree = "<group>";
+		};
 		43AFF3B72270F4E700EB82FC = {
 			isa = PBXGroup;
 			children = (
@@ -219,8 +391,10 @@
 		43AFF3C22270F4E700EB82FC /* VedranTube */ = {
 			isa = PBXGroup;
 			children = (
+				24FA8B3422E359C8006BF92C /* MashaVideo */,
 				24FA8B3122E34DBB006BF92C /* PepaVideo */,
 				43AFF3C32270F4E700EB82FC /* AppDelegate.swift */,
+				24FA8BA122E35C82006BF92C /* ChooseVC.swift */,
 				43AFF3C52270F4E700EB82FC /* ViewController.swift */,
 				43AFF45B2271017B00EB82FC /* MyCollectionViewCell.swift */,
 				43AFF3C72270F4E700EB82FC /* Main.storyboard */,
@@ -230,6 +404,11 @@
 				24B9FC0A22E094D7006E1A12 /* pause.png */,
 				24B9FC0822E08FFF006E1A12 /* play.png */,
 				24FA8B3222E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 */,
+				24FA8B9F22E35BAE006BF92C /* pepa.jpg */,
+				24FA8B9D22E35BA7006BF92C /* bear.jpg */,
+				24FA8BA322E35F10006BF92C /* back.png */,
+				242A212E22E36F6A00BD8A3F /* images.png */,
+				242A213022E3702700BD8A3F /* b.png */,
 			);
 			path = VedranTube;
 			sourceTree = "<group>";
@@ -292,27 +471,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FA8B9922E35A2D006BF92C /* 67.mp4 in Resources */,
+				24FA8B7022E35A2D006BF92C /* 65.mp4 in Resources */,
 				24B9FC3E22E0A3EC006E1A12 /* 1.mp4 in Resources */,
+				24FA8B8022E35A2D006BF92C /* 91.mp4 in Resources */,
 				24B9FC3F22E0A3EC006E1A12 /* 2.mp4 in Resources */,
 				24B9FC4022E0A3EC006E1A12 /* 3.mp4 in Resources */,
+				242A213122E3702700BD8A3F /* b.png in Resources */,
+				24FA8B8422E35A2D006BF92C /* 81.mp4 in Resources */,
 				24B9FC4122E0A3EC006E1A12 /* 4.mp4 in Resources */,
+				24FA8B7C22E35A2D006BF92C /* 66.mp4 in Resources */,
 				24B9FC4222E0A3EC006E1A12 /* 5.mp4 in Resources */,
 				24B9FC4322E0A3EC006E1A12 /* 6.mp4 in Resources */,
+				24FA8B9822E35A2D006BF92C /* 57.mp4 in Resources */,
+				24FA8B8C22E35A2D006BF92C /* 76.mp4 in Resources */,
 				24B9FC4422E0A3EC006E1A12 /* 7.mp4 in Resources */,
 				24B9FC4522E0A3EC006E1A12 /* 8.mp4 in Resources */,
 				24B9FC4622E0A3EC006E1A12 /* 9.mp4 in Resources */,
 				24B9FC4722E0A3EC006E1A12 /* 10.mp4 in Resources */,
 				24B9FC4822E0A3EC006E1A12 /* 11.mp4 in Resources */,
+				24FA8B9622E35A2D006BF92C /* 62.mp4 in Resources */,
 				24B9FC4922E0A3EC006E1A12 /* 12.mp4 in Resources */,
 				24B9FC4A22E0A3EC006E1A12 /* 13.mp4 in Resources */,
 				24B9FC4B22E0A3EC006E1A12 /* 14.mp4 in Resources */,
+				24FA8B8D22E35A2D006BF92C /* 64.mp4 in Resources */,
+				24FA8B7722E35A2D006BF92C /* 82.mp4 in Resources */,
 				24B9FC4C22E0A3EC006E1A12 /* 15.mp4 in Resources */,
+				24FA8B8B22E35A2D006BF92C /* 96.mp4 in Resources */,
 				24B9FC4D22E0A3EC006E1A12 /* 16.mp4 in Resources */,
+				24FA8B8522E35A2D006BF92C /* 77.mp4 in Resources */,
+				24FA8B9322E35A2D006BF92C /* 80.mp4 in Resources */,
 				24B9FC4E22E0A3EC006E1A12 /* 17.mp4 in Resources */,
+				24FA8B8822E35A2D006BF92C /* 75.mp4 in Resources */,
+				24FA8BA422E35F10006BF92C /* back.png in Resources */,
 				24B9FC4F22E0A3EC006E1A12 /* 18.mp4 in Resources */,
 				24B9FC5022E0A3EC006E1A12 /* 19.mp4 in Resources */,
+				24FA8B9E22E35BA8006BF92C /* bear.jpg in Resources */,
+				24FA8B7522E35A2D006BF92C /* 90.mp4 in Resources */,
+				24FA8B7922E35A2D006BF92C /* 63.mp4 in Resources */,
+				24FA8B7122E35A2D006BF92C /* 61.mp4 in Resources */,
+				24FA8B9422E35A2D006BF92C /* 100.mp4 in Resources */,
 				24B9FC5122E0A3EC006E1A12 /* 20.mp4 in Resources */,
+				24FA8B7D22E35A2D006BF92C /* 89.mp4 in Resources */,
 				24B9FC5222E0A3EC006E1A12 /* 21.mp4 in Resources */,
+				24FA8B9C22E35A9A006BF92C /* 59.mp4 in Resources */,
+				24FA8B9122E35A2D006BF92C /* 51.mp4 in Resources */,
+				24FA8B6922E35A2D006BF92C /* 84.mp4 in Resources */,
 				24B9FC5322E0A3EC006E1A12 /* 22.mp4 in Resources */,
 				24B9FC5422E0A3EC006E1A12 /* 23.mp4 in Resources */,
 				24B9FC5522E0A3EC006E1A12 /* 24.mp4 in Resources */,
@@ -321,33 +525,64 @@
 				24B9FC5822E0A3EC006E1A12 /* 27.mp4 in Resources */,
 				24B9FC5922E0A3EC006E1A12 /* 28.mp4 in Resources */,
 				24B9FC5A22E0A3EC006E1A12 /* 29.mp4 in Resources */,
+				24FA8B6B22E35A2D006BF92C /* 85.mp4 in Resources */,
+				24FA8B9522E35A2D006BF92C /* 101.mp4 in Resources */,
+				24FA8B8E22E35A2D006BF92C /* 99.mp4 in Resources */,
 				24FA8B3322E35295006BF92C /* POW - Gaming Sound Effect (HD).mp3 in Resources */,
 				24B9FC5B22E0A3EC006E1A12 /* 30.mp4 in Resources */,
+				24FA8B7422E35A2D006BF92C /* 83.mp4 in Resources */,
 				24B9FC5C22E0A3EC006E1A12 /* 31.mp4 in Resources */,
 				24B9FC5D22E0A3EC006E1A12 /* 32.mp4 in Resources */,
+				24FA8B6C22E35A2D006BF92C /* 56.mp4 in Resources */,
+				24FA8BA022E35BAE006BF92C /* pepa.jpg in Resources */,
 				24B9FC5E22E0A3EC006E1A12 /* 33.mp4 in Resources */,
+				24FA8B8622E35A2D006BF92C /* 52.mp4 in Resources */,
 				24B9FC5F22E0A3EC006E1A12 /* 34.mp4 in Resources */,
 				24B9FC6022E0A3EC006E1A12 /* 35.mp4 in Resources */,
+				24FA8B8222E35A2D006BF92C /* 93.mp4 in Resources */,
 				24B9FC6122E0A3EC006E1A12 /* 36.mp4 in Resources */,
+				24FA8B8122E35A2D006BF92C /* 86.mp4 in Resources */,
+				24FA8B7322E35A2D006BF92C /* 58.mp4 in Resources */,
 				24B9FC6222E0A3EC006E1A12 /* 37.mp4 in Resources */,
+				24FA8B6E22E35A2D006BF92C /* 97.mp4 in Resources */,
 				24B9FC6322E0A3EC006E1A12 /* 38.mp4 in Resources */,
+				24FA8B7A22E35A2D006BF92C /* 72.mp4 in Resources */,
 				24B9FC6422E0A3EC006E1A12 /* 39.mp4 in Resources */,
 				24B9FC6522E0A3EC006E1A12 /* 40.mp4 in Resources */,
 				24B9FC6622E0A3EC006E1A12 /* 41.mp4 in Resources */,
+				24FA8B7222E35A2D006BF92C /* 71.mp4 in Resources */,
 				24B9FC6722E0A3EC006E1A12 /* 42.mp4 in Resources */,
+				24FA8B6822E35A2D006BF92C /* 95.mp4 in Resources */,
+				24FA8B6D22E35A2D006BF92C /* 73.mp4 in Resources */,
 				24B9FC6822E0A3EC006E1A12 /* 43.mp4 in Resources */,
 				24B9FC6922E0A3EC006E1A12 /* 44.mp4 in Resources */,
 				24B9FC6A22E0A3EC006E1A12 /* 45.mp4 in Resources */,
 				24B9FC6B22E0A3EC006E1A12 /* 46.mp4 in Resources */,
+				24FA8B7622E35A2D006BF92C /* 74.mp4 in Resources */,
+				24FA8B8F22E35A2D006BF92C /* 70.mp4 in Resources */,
 				24B9FC6C22E0A3EC006E1A12 /* 47.mp4 in Resources */,
+				24FA8B6F22E35A2D006BF92C /* 98.mp4 in Resources */,
+				242A212F22E36F6A00BD8A3F /* images.png in Resources */,
 				24B9FC6D22E0A3EC006E1A12 /* 48.mp4 in Resources */,
 				24B9FC6E22E0A3EC006E1A12 /* 49.mp4 in Resources */,
 				24B9FC6F22E0A3EC006E1A12 /* 50.mp4 in Resources */,
+				24FA8B7B22E35A2D006BF92C /* 69.mp4 in Resources */,
+				24FA8B8A22E35A2D006BF92C /* 53.mp4 in Resources */,
+				24FA8B6A22E35A2D006BF92C /* 94.mp4 in Resources */,
+				24FA8B9222E35A2D006BF92C /* 78.mp4 in Resources */,
+				24FA8B9722E35A2D006BF92C /* 68.mp4 in Resources */,
+				24FA8B9022E35A2D006BF92C /* 88.mp4 in Resources */,
 				24B9FC0922E08FFF006E1A12 /* play.png in Resources */,
 				24B9FC0B22E094D7006E1A12 /* pause.png in Resources */,
+				24FA8B8722E35A2D006BF92C /* 92.mp4 in Resources */,
 				43AFF3CE2270F4E800EB82FC /* LaunchScreen.storyboard in Resources */,
+				24FA8B7F22E35A2D006BF92C /* 60.mp4 in Resources */,
+				24FA8B7E22E35A2D006BF92C /* 55.mp4 in Resources */,
+				24FA8B8922E35A2D006BF92C /* 79.mp4 in Resources */,
 				43AFF3CB2270F4E800EB82FC /* Assets.xcassets in Resources */,
 				43AFF3C92270F4E700EB82FC /* Main.storyboard in Resources */,
+				24FA8B8322E35A2D006BF92C /* 54.mp4 in Resources */,
+				24FA8B7822E35A2D006BF92C /* 87.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +596,7 @@
 				43AFF3C62270F4E700EB82FC /* ViewController.swift in Sources */,
 				43AFF3C42270F4E700EB82FC /* AppDelegate.swift in Sources */,
 				43AFF45C2271017B00EB82FC /* MyCollectionViewCell.swift in Sources */,
+				24FA8BA222E35C82006BF92C /* ChooseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

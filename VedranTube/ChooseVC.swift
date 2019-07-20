@@ -13,7 +13,6 @@ class ChooseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
@@ -21,11 +20,13 @@ class ChooseVC: UIViewController {
     @IBAction func masha(_ sender: UITapGestureRecognizer) {
         let vc:ViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
         vc.masha = true
+        vc.playSound()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func pepa(_ sender: UITapGestureRecognizer) {
         let vc:ViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        vc.playSound()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

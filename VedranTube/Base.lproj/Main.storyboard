@@ -165,26 +165,34 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="364" height="289"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-y0-oVz">
-                                                            <rect key="frame" x="20" y="69" width="152" height="21"/>
+                                                            <rect key="frame" x="16" y="238" width="152" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="6Id-g5-4d9"/>
                                                                 <constraint firstAttribute="width" constant="152" id="Rti-HO-QEU"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13O-dl-yFm">
+                                                            <rect key="frame" x="0.0" y="0.0" width="364" height="289"/>
+                                                        </imageView>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
                                                     <constraint firstItem="hpo-Z8-1m6" firstAttribute="leading" secondItem="TTu-Tk-17K" secondAttribute="leading" id="309-fF-fZv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="13O-dl-yFm" secondAttribute="bottom" id="5nB-zS-msN"/>
                                                     <constraint firstAttribute="trailing" secondItem="hpo-Z8-1m6" secondAttribute="trailing" id="HKd-xc-08G"/>
-                                                    <constraint firstItem="bWb-y0-oVz" firstAttribute="top" secondItem="TTu-Tk-17K" secondAttribute="topMargin" constant="41" id="LPs-XI-4z1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bWb-y0-oVz" secondAttribute="bottom" constant="30" id="NWf-Ln-thc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="13O-dl-yFm" secondAttribute="trailing" id="PYy-jB-SeL"/>
                                                     <constraint firstItem="hpo-Z8-1m6" firstAttribute="top" secondItem="TTu-Tk-17K" secondAttribute="top" id="aAR-fp-uWW"/>
                                                     <constraint firstAttribute="bottom" secondItem="hpo-Z8-1m6" secondAttribute="bottom" id="lDV-h1-ZnR"/>
-                                                    <constraint firstItem="bWb-y0-oVz" firstAttribute="leading" secondItem="TTu-Tk-17K" secondAttribute="leading" constant="20" id="uVb-oE-fjT"/>
+                                                    <constraint firstItem="13O-dl-yFm" firstAttribute="top" secondItem="TTu-Tk-17K" secondAttribute="top" id="pjz-jb-gWZ"/>
+                                                    <constraint firstItem="13O-dl-yFm" firstAttribute="leading" secondItem="TTu-Tk-17K" secondAttribute="leading" id="qtB-vA-K9X"/>
+                                                    <constraint firstItem="bWb-y0-oVz" firstAttribute="leading" secondItem="TTu-Tk-17K" secondAttribute="leading" constant="16" id="uVb-oE-fjT"/>
                                                 </constraints>
                                                 <connections>
+                                                    <outlet property="imageGif" destination="13O-dl-yFm" id="CCn-aq-F5a"/>
                                                     <outlet property="lblDuration" destination="bWb-y0-oVz" id="dzP-ZA-k6c"/>
                                                     <outlet property="moviewImageView" destination="hpo-Z8-1m6" id="MtA-fh-4xc"/>
                                                 </connections>

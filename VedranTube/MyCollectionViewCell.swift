@@ -12,6 +12,9 @@ class MyCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var moviewImageView: UIImageView!
     
-    
     @IBOutlet weak var lblDuration: UILabel!
+    
+    @IBOutlet weak var imageGif: UIImageView!
+    
+    
 }

@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         }
         
         array = array.shuffled()
-       
+        
         navigationController?.setNavigationBarHidden(true, animated: true)
         
         guard let name = self.array.first  else { return }
@@ -59,12 +59,12 @@ class ViewController: UIViewController {
         playBackSlider.isContinuous = true
         playBackSlider.tintColor = UIColor.red
         playBackSlider.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
-
+        
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.respondTapGesture))
         playerView.addGestureRecognizer(tapGesture)
         playerView.isUserInteractionEnabled = true
-
+        
         self.periodSliderChange()
         
         NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: nil)
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
             flowLayout.itemSize.width = 150
             flowLayout.itemSize.height = 141
         }
-
+        
         let img = UIImage(named: "b")
         img?.withRenderingMode(.alwaysTemplate)
         self.backButton.setImage(img, for: .normal)
@@ -103,9 +103,9 @@ class ViewController: UIViewController {
     }
     
     @objc func respondTapGesture(gesture: UIGestureRecognizer) {
-
+        
         self.collectionViewHelper.alpha = 0.0
-
+        
         UIView.animate(withDuration:1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             
             self.playButton.isHidden = !self.playButton.isHidden
@@ -121,7 +121,7 @@ class ViewController: UIViewController {
         }, completion: { (completedAnimation) in
             self.collectionViewHelper.alpha = 1
         })
-
+        
         if !self.player.isPlaying {
             // setTimer()
             self.player.play()
@@ -142,23 +142,27 @@ class ViewController: UIViewController {
     func periodSliderChange() {
         player.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: DispatchQueue.main) { (CMTime) -> Void in
             if self.player.currentItem?.status == .readyToPlay {
+                
+                if self.player.isPlaying {
+                    self.playButton.setImage(UIImage(named: "pause"), for: .normal)
+                }else {
+                    self.playButton.setImage(UIImage(named: "play"), for: .normal)
+                }
+                
+                
                 let time : Float64 = CMTimeGetSeconds(self.player.currentTime());
                 self.playBackSlider!.value = Float ( time )
                 let timeCurrent = CMTimeGetSeconds(self.player.currentTime())
                 let secsCurrent = Int(timeCurrent)
-
-                let timeEnd = CMTimeGetSeconds(self.player.currentItem!.duration)
-                let secsEnd = Int(timeEnd)
                 
-                DispatchQueue.main.async {
-                    if self.player.isPlaying {
-                        self.playButton.setImage(UIImage(named: "pause"), for: .normal)
-                    }else {
-                        self.playButton.setImage(UIImage(named: "play"), for: .normal)
-                    }
-                    self.leftLabel.text = NSString(format: "%02d:%02d", secsCurrent/60, secsCurrent%60) as String//"\(secs/60):\(secs%60)"
-                    self.rightLabel.text = NSString(format: "%02d:%02d", secsEnd/60, secsEnd%60) as String//"\(secs/60):\(secs%60)"
+                let timeEnd = CMTimeGetSeconds(self.player.currentItem!.duration)
+                if !timeEnd.isNaN {
+                    let secsEnd = Int(timeEnd)
+                    self.leftLabel.text = NSString(format: "%02d:%02d", secsCurrent/60, secsCurrent%60) as String
+                    self.rightLabel.text = NSString(format: "%02d:%02d", secsEnd/60, secsEnd%60) as String
+                    
                 }
+
             }
         }
     }
@@ -182,6 +186,9 @@ class ViewController: UIViewController {
                 self.playButton.setImage(UIImage(named: "play"), for: .normal)
             }
         }
+        
+        self.collectionView.reloadData()
+
     }
     
     @IBAction func button(_ sender: UIButton) {
@@ -192,6 +199,7 @@ class ViewController: UIViewController {
             player.play()
             self.playButton.setImage(UIImage(named: "pause"), for: .normal)
         }
+        self.collectionView.reloadData()
     }
     
     func playVideo(with nameOfVideo:String) {
@@ -209,6 +217,7 @@ class ViewController: UIViewController {
         self.playerView.bringSubviewToFront(self.leftLabel)
         self.playerView.bringSubviewToFront(self.rightLabel)
         self.playerView.bringSubviewToFront(self.backButton)
+        self.collectionView.reloadData()
     }
     
     func playSound() {
@@ -263,6 +272,22 @@ extension ViewController: UICollectionViewDataSource {
         let timeEnd = CMTimeGetSeconds(asset.duration)
         let secs = Int(timeEnd)
         cell?.lblDuration.text = NSString(format: "%02d:%02d", secs/60, secs%60) as String
+        
+        let asset1 = self.player.currentItem?.asset as? AVURLAsset
+        var assString = asset1?.url.lastPathComponent
+        assString = assString?.replacingOccurrences(of: ".mp4", with: "")
+        if assString == name && self.player.isPlaying {
+            let imageData = try? Data(contentsOf: Bundle.main.url(forResource: "Nt6v", withExtension: "gif")!)
+            cell?.imageGif.image = UIImage.gifImageWithData(imageData!)
+        }
+        else {
+            cell?.imageGif.image = UIImage()
+        }
+        
+        
+        
+        
+        
         return cell!
     }
 }
